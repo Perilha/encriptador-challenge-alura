@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="reset.css">
+	<title> Decodificador </title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">	
+</head>
+
+<body>
+	<header>
+		<h1 class="logoAlura">
+			<img src="logo-alura.png" alt="Logo A de Alura">
+		</h1>
+	</header>
+	
+	<main>
+		<section class="retanguloBranco" name = "retanguloBranco">
+			<textarea cols="20" rows="20" id="mensagem"></textarea>
+			<button class="botoes" id="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+			<div class="textoRetangulo">
+				<h3>Nenhuma mensagem Encontrada</h3>
+				<h4>Digite um texto que você deseja criptografar ou descriptografar</h4>
+			</div>
+		</section>
+		
+		<img src="imagem-retangulo.png" class="menino" id="meninoAzul">
+		
+		<textarea id="inputTexto" placeholder="Digite seu texto" autofocus></textarea>
+
+ 		<section class=textoeBotoes>
+			<h5> <img src="exclamacao.png"> Apenas letras minúsculas e sem acento</h5>
+			<div class=botoes>
+				<button id="botaoCriptografar" onclick ="botaoEncriptar()">Criptografar</button>
+				<button id="botaoDescriptografar" onclick="botaoDescriptografar()">Descriptografar</button>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<h6>© 2022 - Challenge Alura <br> Developed by Perilha.</h6>
+	</footer>
+</body>
+
+<script src="script.js"></script>
+
+
+
